@@ -4223,6 +4223,21 @@ runFunction(function()
 	})
 end)
 
+runFunction(function()
+	local CustomFeature = {Enabled = false}
+    CustomFeature = GuiLibrary.ObjectsThatCanBeSaved.BlatantWindow.Api.CreateOptionsButton({
+		Name = "TOTALLY BANS YOU FROM ADOPT ME",
+		Function = function(callback)
+			if callback then
+			   print("hi")
+			else
+			   warn("you got banned from adopt me, by vape owner for hack")
+		  end
+		end, 
+		HoverText = "CustomFeature, Totally Mostly Known Feature"
+	})
+end)
+
 local LongJump = {Enabled = false}
 runFunction(function()
 	local damagetimer = 0
